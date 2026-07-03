@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Photoflowy Cast Receiver</title>
+  <link rel="stylesheet" href="styles.css?v=photoflowy-a1ea3d9f">
+  <script src="//www.gstatic.com/cast/sdk/libs/caf_receiver/v3/cast_receiver_framework.js"></script>
+</head>
+<body>
+  <main id="surface" class="surface surface-idle">
+    <section id="status" class="status">
+      <p id="stateLabel">Photoflowy</p>
+      <p id="detailLabel">Waiting for content...</p>
+    </section>
+    <iframe id="htmlFrame" class="html-frame" sandbox="allow-same-origin"></iframe>
+    <img id="imageFrame" class="image-frame" alt="">
+    <canvas id="overlayCanvas" class="overlay-canvas"></canvas>
+    <svg id="overlaySvg" class="overlay-svg" aria-hidden="true"></svg>
+  </main>
+  <script src="receiver.js?v=photoflowy-a1ea3d9f"></script>
+</body>
+</html>

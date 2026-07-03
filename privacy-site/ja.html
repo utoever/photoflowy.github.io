@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>photoflowy プライバシーポリシー</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { font-family: -apple-system, "Segoe UI", Roboto, "Noto Sans JP", "Noto Sans KR", sans-serif;
+         line-height: 1.8; max-width: 820px; margin: 0 auto; padding: 24px 20px 80px;
+         color: #1a1a1a; background: #fff; }
+  @media (prefers-color-scheme: dark) { body { color: #e6e6e6; background: #161616; } a { color: #6db3ff; } }
+  h1 { font-size: 1.7rem; border-bottom: 2px solid #888; padding-bottom: 12px; }
+  h2 { font-size: 1.25rem; margin-top: 2em; }
+  h3 { font-size: 1.05rem; margin-top: 1.4em; }
+  table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 0.95rem; }
+  th, td { border: 1px solid #999; padding: 8px 10px; text-align: left; vertical-align: top; }
+  th { background: rgba(128,128,128,0.15); }
+  code { background: rgba(128,128,128,0.15); padding: 1px 5px; border-radius: 4px; }
+  .meta { color: #777; font-size: 0.9rem; }
+  .note { background: rgba(128,128,128,0.1); border-left: 4px solid #888; padding: 10px 14px; border-radius: 4px; }
+  .lang { font-size: 0.9rem; margin: 8px 0 20px; }
+  .lang a { margin: 0 4px; }
+</style>
+</head>
+<body>
+<nav class="lang">🌐 <a href="index.html">한국어</a> · <a href="en.html">English</a> · <a href="ja.html">日本語</a> · <a href="vi.html">Tiếng Việt</a></nav>
+
+<h1>photoflowy プライバシーポリシー</h1>
+<p class="meta">施行日: 2026年7月4日 · 最終更新日: 2026年7月4日</p>
+
+<p>本プライバシーポリシーは、Clipflowy（以下「開発者」または「当社」）が提供するモバイルアプリケーション <strong>photoflowy</strong>（以下「本アプリ」）の利用者の個人情報を、どのように収集・利用・保管・保護するかを説明するものです。photoflowy は、利用者が選択した写真、フォトブック、マジックフォトブック、フォトフレームセッションを端末上で管理する <strong>ローカルファースト（local-first）</strong> の写真／フォトブックアプリです。</p>
+
+<h2>1. 概要</h2>
+<ul>
+  <li>利用者が開く写真およびフォトブックファイル（CBZ、CB7、ZIP、PBZ、PB7、画像、Markdown ノート、<code>.pfslide</code> など）と、進捗、棚、レイアウト、キャプション、ノート、検索インデックス、リマインダー、設定は、既定で <strong>端末内に保存</strong> され、当社サーバーへアップロードされません。</li>
+  <li>当社は、利用者の元写真、フォトブックの内容、検索インデックス、AI チャットの内容を広告ターゲティング目的で閲覧または収集しません。</li>
+  <li>広告（Google AdMob）、リモート設定（Firebase Remote Config）、アプリ内購入、任意の AI/TTS/Chromecast 機能を提供するため、一部の端末情報、広告識別子、購入情報、または利用者が明示的に送信したコンテンツが第三者サービスで処理される場合があります。</li>
+  <li>外部 AI、Cloud TTS、外部ディスプレイ、Chromecast、写真アクセス、カメラアクセスは、利用者の明示的な操作または OS 権限の許可後にのみ使用されます。</li>
+</ul>
+
+<h2>2. 取り扱う情報と利用目的</h2>
+<h3>2.1 端末に保存される情報（当社は収集しません）</h3>
+<table>
+  <tr><th>項目</th><th>説明</th><th>保存場所</th></tr>
+  <tr><td>写真およびフォトブックファイル</td><td>利用者が開くまたは取り込む JPG、PNG、WEBP、GIF、BMP、HEIC、CBZ、CB7、ZIP、PBZ、PB7、Markdown ノート、マジックフォトブック（<code>.pfslide</code>）など</td><td>利用者の端末または利用者が選択したファイルの場所</td></tr>
+  <tr><td>フォトブックデータ</td><td>棚、閲覧進捗、サムネイルキャッシュ、レイアウト、キャプション、ノート、EXIF 由来メタデータ、検索インデックス、マジックフォトブック一覧</td><td>利用者の端末（ローカルDBおよびキャッシュ）</td></tr>
+  <tr><td>マジックリマインダーおよび AI チャット</td><td>利用者が作成したリマインダー、ローカル通知スケジュール、保存した AI 会話および添付ファイル</td><td>利用者の端末（ローカルDBおよびアプリ保存領域）</td></tr>
+  <tr><td>セキュリティおよび設定データ</td><td>アプリロック PIN ハッシュ、生体認証設定、利用者が入力した API キー、購入権限キャッシュ、テーマ・フレーム・トランジション・TTS・AI 設定</td><td>利用者の端末（ローカルDBまたは Keychain/Keystore）</td></tr>
+</table>
+<p class="note">これらのデータは端末内ストレージおよびローカルデータベース（SQLite）に保存されます。利用者が端末外へデータを送信する機能を明示的に使用しない限り、当社はこの情報にアクセスまたは収集しません。</p>
+
+<h3>2.2 第三者サービスを通じて処理される情報</h3>
+<table>
+  <tr><th>第三者サービス</th><th>処理される情報（例）</th><th>目的</th></tr>
+  <tr><td>Google AdMob（広告）</td><td>広告識別子（IDFA/AAID）、おおまかな端末情報、IP アドレス、広告操作データ</td><td>アプリ内広告の配信および測定</td></tr>
+  <tr><td>Firebase Remote Config / Firebase Analytics（ビルドで有効な場合）</td><td>アプリインスタンス識別子、端末／アプリのバージョン、言語、基本的な診断イベントなどの技術情報</td><td>機能フラグ、必須アップデート、サービス安定性の診断</td></tr>
+  <tr><td>App Store / Google Play 購入</td><td>購入商品 ID、レシートまたは購入トークン、購入状態</td><td>アプリ内購入、購入の復元、有料機能の権限確認</td></tr>
+  <tr><td>Google Cast / Chromecast</td><td>利用者が Cast を開始した場合の選択した受信機情報、セッション情報、送信されるフレーム／スライドショーフレーム</td><td>Android Chromecast のフォトフレーム／スライドショー出力</td></tr>
+  <tr><td>端末の音声合成（TTS）または Google Cloud TTS（任意）</td><td>利用者が読み上げまたはクラウドプレビューを有効にした場合のキャプション、TXT、SSML テキストおよび必要な API リクエスト情報</td><td>キャプション/TXT 読み上げおよび任意の Cloud TTS プレビュー</td></tr>
+  <tr><td>Gemini など利用者が設定した AI 提供者（任意）</td><td>AI 機能を使用する際に利用者が確認して送信する画像、画面キャプチャ、入力テキスト、プロンプト、API リクエスト情報</td><td>マジックリマインダー抽出、OCR、翻訳、文書／画像分析、AI チャット</td></tr>
+  <tr><td>Apple Intelligence（対応端末で任意）</td><td>画面キャプチャおよびテキスト文脈</td><td>オンデバイス AI 処理および OCR 文脈の生成</td></tr>
+</table>
+<p class="note">任意項目は、該当機能をご自身で有効にした場合にのみ動作します。元写真およびフォトブックは既定ではアップロードされず、外部 AI または Cloud TTS を使用する前に本アプリは送信案内を表示します。</p>
+
+<h3>2.3 自動的に処理される場合がある情報</h3>
+<p>本アプリおよび第三者 SDK は、サービス提供・セキュリティ・エラー診断のため、IP アドレス、端末モデル、OS バージョン、アプリバージョン、言語設定などの一般的な技術情報を一時的に処理する場合があります。当社は元写真、フォトブックの内容、ローカル検索インデックスを広告ターゲティングに使用しません。</p>
+
+<h2>3. 端末の権限について</h2>
+<table>
+  <tr><th>権限</th><th>利用目的</th></tr>
+  <tr><td>インターネット（ネットワーク）</td><td>広告の受信、リモート設定、アプリ内購入確認、任意の AI/Cloud TTS、Chromecast 接続</td></tr>
+  <tr><td>広告 ID（Android <code>AD_ID</code>）</td><td>広告の配信および測定</td></tr>
+  <tr><td>通知（POST_NOTIFICATIONS）</td><td>マジックリマインダーなど利用者が設定したローカル通知の表示</td></tr>
+  <tr><td>フォアグラウンドサービス／メディア再生</td><td>スライドショー、フレームモード、キャプション読み上げなど利用者が開始した再生セッションの維持</td></tr>
+  <tr><td>ファイル／写真ライブラリへのアクセス</td><td>利用者が選択した写真、フォトブック、フォルダ、Markdown ノート、マジックフォトブックを開いて表示（Android SAF、iOS Document Picker/PHPicker）</td></tr>
+  <tr><td>カメラ</td><td>利用者がマジックリマインダー用の写真またはスキャン取り込みを開始した場合の撮影</td></tr>
+  <tr><td>生体認証 / Face ID</td><td>アプリまたは保護された棚のロック解除。本アプリは生体情報そのものにはアクセスせず、OS の認証結果のみを受け取ります。</td></tr>
+  <tr><td>外部ディスプレイ / Chromecast</td><td>利用者が接続を開始した場合に、フォトフレームまたはスライドショーを外部画面に出力</td></tr>
+</table>
+<p>すべての権限は、OS の設定からいつでも変更・取り消しが可能です。</p>
+
+<h2>4. 広告とトラッキング（App Tracking Transparency）</h2>
+<p>本アプリは Google AdMob を通じて広告を表示する場合があります。iOS では、トラッキングのために利用者の明示的な同意（App Tracking Transparency）を求める場合があり、同意しない場合はパーソナライズド広告の代わりに非パーソナライズド広告が表示されることがあります。当社は利用者の写真、フォトブック、検索履歴、AI チャット、リマインダーを広告パーソナライズのために直接提供しません。広告のパーソナライズは以下で管理できます。</p>
+<ul>
+  <li>iOS: 設定 → プライバシーとセキュリティ → トラッキング</li>
+  <li>Android: 設定 → Google → 広告</li>
+  <li>Google 広告設定: <a href="https://adssettings.google.com">https://adssettings.google.com</a></li>
+</ul>
+
+<h2>5. 保管および削除</h2>
+<p>ローカルに保存されたアプリデータは、利用者がアプリを削除するか、アプリ内でデータを削除すると削除されます。アプリ一覧から項目を削除しても、通常、利用者が選択した元ファイルは削除されません。アプリ内にコピーされたファイルは利用者が削除できます。OS の端末バックアップが有効な場合、一部のローカルデータが Apple または Google のバックアップポリシーに従ってバックアップされることがあります。第三者サービスが処理するデータの保管期間は、各サービスのポリシーに従います。</p>
+
+<h2>6. 第三者サービスのプライバシーポリシー</h2>
+<ul>
+  <li>Google プライバシーポリシー: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
+  <li>Google AdMob／広告: <a href="https://support.google.com/admob/answer/6128543">https://support.google.com/admob/answer/6128543</a></li>
+  <li>Firebase プライバシーとセキュリティ: <a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a></li>
+  <li>Apple プライバシーポリシー: <a href="https://www.apple.com/legal/privacy/">https://www.apple.com/legal/privacy/</a></li>
+</ul>
+
+<h2>7. 子どものプライバシー</h2>
+<p>本アプリは 13 歳未満（または居住国が定める年齢未満）の子どもを主な対象とせず、子どもの個人情報を故意に収集しません。子どもの情報が収集されたことが判明した場合、速やかに削除します。</p>
+
+<h2>8. 利用者の権利</h2>
+<p>利用者は、関連法令（例: 韓国個人情報保護法、EU GDPR、米国 CCPA など）に基づき、ご自身の個人情報の開示・訂正・削除・処理停止を請求できます。請求は下記の連絡先までお願いいたします。</p>
+
+<h2>9. セキュリティ</h2>
+<p>当社は合理的な技術的・管理的保護措置を講じます。API キー、認証トークン、アプリロック情報などの機密性の高いローカルデータは、可能な場合、OS のセキュアストレージ（Keychain/Keystore）を用いて保管します。ただし、インターネットを通じた送信や電子的保存が 100% 安全であることを保証するものではありません。</p>
+
+<h2>10. 本ポリシーの変更</h2>
+<p>本ポリシーは法令やサービスの変更に応じて改定される場合があり、重要な変更の際は本アプリまたは本ページにて通知します。改定後のポリシーは掲載時点で効力を生じます。</p>
+
+<h2>11. お問い合わせ</h2>
+<p>運営者: Utospace<br>メール: <a href="mailto:clipflowy@gmail.com">clipflowy@gmail.com</a></p>
+
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>photoflowy Privacy Policy</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { font-family: -apple-system, "Segoe UI", Roboto, "Noto Sans KR", sans-serif;
+         line-height: 1.7; max-width: 820px; margin: 0 auto; padding: 24px 20px 80px;
+         color: #1a1a1a; background: #fff; }
+  @media (prefers-color-scheme: dark) { body { color: #e6e6e6; background: #161616; } a { color: #6db3ff; } }
+  h1 { font-size: 1.7rem; border-bottom: 2px solid #888; padding-bottom: 12px; }
+  h2 { font-size: 1.25rem; margin-top: 2em; }
+  h3 { font-size: 1.05rem; margin-top: 1.4em; }
+  table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 0.95rem; }
+  th, td { border: 1px solid #999; padding: 8px 10px; text-align: left; vertical-align: top; }
+  th { background: rgba(128,128,128,0.15); }
+  code { background: rgba(128,128,128,0.15); padding: 1px 5px; border-radius: 4px; }
+  .meta { color: #777; font-size: 0.9rem; }
+  .note { background: rgba(128,128,128,0.1); border-left: 4px solid #888; padding: 10px 14px; border-radius: 4px; }
+  .lang { font-size: 0.9rem; margin: 8px 0 20px; }
+  .lang a { margin: 0 4px; }
+</style>
+</head>
+<body>
+<nav class="lang">🌐 <a href="index.html">한국어</a> · <a href="en.html">English</a> · <a href="ja.html">日本語</a> · <a href="vi.html">Tiếng Việt</a></nav>
+
+<h1>photoflowy Privacy Policy</h1>
+<p class="meta">Effective date: July 4, 2026 · Last updated: July 4, 2026</p>
+
+<p>This Privacy Policy explains how Clipflowy (the “Developer” or “we”) collects, uses, stores, and protects the personal information of users of the mobile application <strong>photoflowy</strong> (the “App”). photoflowy is a <strong>local-first</strong> photo book and ambient photo frame app that manages the photos, photo books, Magic Photobooks, and frame sessions you choose on your device.</p>
+
+<h2>1. Summary</h2>
+<ul>
+  <li>The photos and photo book files you open (CBZ, CB7, ZIP, PBZ, PB7, images, Markdown notes, <code>.pfslide</code>, and similar files), along with progress, shelves, layouts, captions, notes, search indexes, reminders, and settings, are stored <strong>on your device by default</strong> and are not uploaded to our servers.</li>
+  <li>We do not read or collect your original photos, photo book contents, search indexes, or AI chat contents for advertising targeting.</li>
+  <li>To provide ads (Google AdMob), remote configuration (Firebase Remote Config), in-app purchases, and optional AI/TTS/Chromecast features, some device information, advertising identifiers, purchase information, or content you explicitly send may be processed by third-party services.</li>
+  <li>External AI, Cloud TTS, external display, Chromecast, photo access, and camera access are used only after your explicit action or operating-system permission.</li>
+</ul>
+
+<h2>2. Information We Process and Purposes</h2>
+<h3>2.1 Information stored on your device (not collected by us)</h3>
+<table>
+  <tr><th>Item</th><th>Description</th><th>Storage location</th></tr>
+  <tr><td>Photos and photo book files</td><td>JPG, PNG, WEBP, GIF, BMP, HEIC, CBZ, CB7, ZIP, PBZ, PB7, Markdown notes, Magic Photobooks (<code>.pfslide</code>), and similar files you open or import</td><td>Your device or the file location you selected</td></tr>
+  <tr><td>Photo book data</td><td>Shelves, viewing progress, thumbnail cache, layouts, captions, notes, EXIF-derived metadata, search indexes, Magic Photobook lists</td><td>Your device (local DB and cache)</td></tr>
+  <tr><td>Magic Reminders and AI chats</td><td>Reminders you create, local notification schedules, AI conversations and attachments you save</td><td>Your device (local DB and app storage)</td></tr>
+  <tr><td>Security and settings data</td><td>App-lock PIN hash, biometric setting, API keys you enter, purchase entitlement cache, theme, frame, transition, TTS, and AI settings</td><td>Your device (local DB or Keychain/Keystore)</td></tr>
+</table>
+<p class="note">This data is kept in device storage and a local database (SQLite). We do not access or collect it unless you explicitly use a feature that sends data outside the device.</p>
+
+<h3>2.2 Information processed via third-party services</h3>
+<table>
+  <tr><th>Third-party service</th><th>Information processed (examples)</th><th>Purpose</th></tr>
+  <tr><td>Google AdMob (advertising)</td><td>Advertising identifier (IDFA/AAID), coarse device information, IP address, ad-interaction data</td><td>Serving and measuring in-app ads</td></tr>
+  <tr><td>Firebase Remote Config / Firebase Analytics (if enabled in the build)</td><td>App instance identifier, device/app version, language, basic diagnostic events, and similar technical information</td><td>Feature flags, required-update gates, service reliability diagnostics</td></tr>
+  <tr><td>App Store / Google Play purchases</td><td>Purchased product ID, receipt or purchase token, purchase status</td><td>In-app purchases, purchase restoration, paid-feature entitlement checks</td></tr>
+  <tr><td>Google Cast / Chromecast</td><td>Selected receiver information, session information, and frame/slideshow frames when you start casting</td><td>Android Chromecast frame or slideshow output</td></tr>
+  <tr><td>Device text-to-speech (TTS) or Google Cloud TTS (optional)</td><td>Caption, TXT, or SSML text and required API request information when you enable narration or cloud preview</td><td>Caption/TXT narration and optional Cloud TTS preview</td></tr>
+  <tr><td>AI providers you configure, such as Gemini (optional)</td><td>Images, screen captures, entered text, prompts, and API request information you confirm and send when using AI features</td><td>Magic Reminder extraction, OCR, translation, document/image analysis, AI chat</td></tr>
+  <tr><td>Apple Intelligence (optional on supported devices)</td><td>Screen captures and text context</td><td>On-device AI processing and OCR context generation</td></tr>
+</table>
+<p class="note">Optional items operate only when you turn the corresponding feature on. Original photos and photo books are not uploaded by default, and the App shows a transfer notice before using external AI or Cloud TTS.</p>
+
+<h3>2.3 Information that may be processed automatically</h3>
+<p>The App and third-party SDKs may temporarily process general technical information such as IP address, device model, OS version, app version, and language settings to provide the service, ensure security, and diagnose errors. We do not use original photos, photo book contents, or local search indexes for advertising targeting.</p>
+
+<h2>3. Device Permissions</h2>
+<table>
+  <tr><th>Permission</th><th>Purpose</th></tr>
+  <tr><td>Internet (network)</td><td>Receiving ads, remote configuration, in-app purchase checks, optional AI/Cloud TTS, Chromecast connection</td></tr>
+  <tr><td>Advertising ID (Android <code>AD_ID</code>)</td><td>Serving and measuring ads</td></tr>
+  <tr><td>Notifications (POST_NOTIFICATIONS)</td><td>Showing local notifications you set, such as Magic Reminders</td></tr>
+  <tr><td>Foreground service / media playback</td><td>Maintaining playback sessions you start, such as slideshows, frame mode, or caption narration</td></tr>
+  <tr><td>File/photo library access</td><td>Opening and displaying photos, photo books, folders, Markdown notes, and Magic Photobooks you select (Android SAF, iOS Document Picker/PHPicker)</td></tr>
+  <tr><td>Camera</td><td>Capturing photos or scans when you start Magic Reminder import</td></tr>
+  <tr><td>Biometrics / Face ID</td><td>Unlocking the app or protected shelves. The App receives only the OS authentication result and does not access raw biometric data.</td></tr>
+  <tr><td>External display / Chromecast</td><td>Outputting a frame or slideshow to an external screen when you start the connection</td></tr>
+</table>
+<p>All permissions can be changed or revoked at any time in your operating system settings.</p>
+
+<h2>4. Advertising and App Tracking Transparency</h2>
+<p>The App may display ads via Google AdMob. On iOS, it may request your explicit consent for tracking (App Tracking Transparency); if you decline, non-personalized ads may be shown instead of personalized ones. We do not directly provide your photos, photo books, search history, AI chats, or reminders for ad personalization. You can manage ad personalization here:</p>
+<ul>
+  <li>iOS: Settings → Privacy &amp; Security → Tracking</li>
+  <li>Android: Settings → Google → Ads</li>
+  <li>Google Ad Settings: <a href="https://adssettings.google.com">https://adssettings.google.com</a></li>
+</ul>
+
+<h2>5. Retention and Deletion</h2>
+<p>Locally stored app data is removed when you delete the App or clear data within the App. Removing an item from the App list usually does not delete the original file you selected; files copied inside the App can be deleted by you. If operating-system device backup is enabled, some local data may be backed up under Apple’s or Google’s backup policies. Retention periods for data handled by third-party services follow those services’ policies.</p>
+
+<h2>6. Third-Party Privacy Policies</h2>
+<ul>
+  <li>Google Privacy Policy: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
+  <li>Google AdMob / Ads: <a href="https://support.google.com/admob/answer/6128543">https://support.google.com/admob/answer/6128543</a></li>
+  <li>Firebase Privacy &amp; Security: <a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a></li>
+  <li>Apple Privacy Policy: <a href="https://www.apple.com/legal/privacy/">https://www.apple.com/legal/privacy/</a></li>
+</ul>
+
+<h2>7. Children’s Privacy</h2>
+<p>The App is not primarily directed at children under 13 (or the age defined in your country) and does not knowingly collect children’s personal information. If we learn that such information has been collected, we will delete it without undue delay.</p>
+
+<h2>8. Your Rights</h2>
+<p>Under applicable laws (e.g., the Korean Personal Information Protection Act, EU GDPR, US CCPA), you may request access to, correction of, deletion of, or restriction of processing of your personal information. Requests can be sent to the contact below.</p>
+
+<h2>9. Security</h2>
+<p>We apply reasonable technical and administrative safeguards. Sensitive local data such as API keys, authentication tokens, and app-lock information is stored using the operating system’s secure storage (Keychain/Keystore) where possible. However, no method of transmission over the Internet or electronic storage is 100% secure.</p>
+
+<h2>10. Changes to This Policy</h2>
+<p>This Policy may be revised due to legal or service changes; for material changes we will provide notice via the App or this page. The revised Policy takes effect upon posting.</p>
+
+<h2>11. Contact</h2>
+<p>Operator: Utospace<br>Email: <a href="mailto:clipflowy@gmail.com">clipflowy@gmail.com</a></p>
+
+</body>
+</html>

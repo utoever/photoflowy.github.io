@@ -1,0 +1,102 @@
+:root {
+  color-scheme: dark;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #0f1115;
+  color: #f6f2eb;
+}
+
+html,
+body,
+.surface {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.surface {
+  position: relative;
+  overflow: hidden;
+  background: #0f1115;
+}
+
+.status {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-content: center;
+  gap: 10px;
+  padding: 56px;
+  text-align: center;
+  background: #0f1115;
+  z-index: 3;
+}
+
+.status p {
+  margin: 0;
+}
+
+#stateLabel {
+  font-size: clamp(38px, 6vw, 84px);
+  font-weight: 760;
+}
+
+#detailLabel {
+  color: #c9ced7;
+  font-size: clamp(20px, 2.4vw, 34px);
+}
+
+.html-frame,
+.image-frame,
+.overlay-canvas,
+.overlay-svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.html-frame,
+.image-frame {
+  opacity: 0;
+  transition: opacity 180ms ease;
+  transform-origin: 0 0;
+  z-index: 1;
+}
+
+.html-frame {
+  background: #111315;
+}
+
+.image-frame {
+  object-fit: contain;
+  background: #050608;
+}
+
+.overlay-canvas {
+  display: block;
+  pointer-events: none;
+  z-index: 4;
+}
+
+.overlay-svg {
+  display: block;
+  overflow: visible;
+  pointer-events: none;
+  z-index: 5;
+}
+
+.surface-html .html-frame,
+.surface-image .image-frame,
+.surface-loading .status,
+.surface-audio .status,
+.surface-error .status,
+.surface-idle .status {
+  opacity: 1;
+}
+
+.surface-html .status,
+.surface-image .status {
+  opacity: 0;
+  pointer-events: none;
+}
